@@ -17,6 +17,10 @@ env:
   NODE_VERSION: '20'
   RUST_BACKTRACE: 1
 
+# Required to create releases
+permissions:
+  contents: write
+
 jobs:
   # ─── Run tests before building ───
   test:
